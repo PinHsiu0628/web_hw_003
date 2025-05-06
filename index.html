@@ -122,10 +122,6 @@
             setCookie('cookies_accepted', 'true', 365);
         }
 
-        if (document.cookie.indexOf('cookies_accepted=true') === -1) {
-            cookieInfo.classList.remove('hidden');
-        }
-
         cookieInfoCloseButton.addEventListener('click', closeCookieInfo);
         cookieInfoCloseX.addEventListener('click', closeCookieInfo);
         cookieInfoButton.addEventListener('click', () => cookieInfo.classList.remove('hidden'));
